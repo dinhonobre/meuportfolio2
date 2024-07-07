@@ -1,0 +1,153 @@
+/* Variáveis de cores */
+:root {
+    --cor-primaria: #0d2a44; /* Cor principal para cabeçalho, rodapé e botões */
+    --cor-texto: #fff; /* Cor do texto principal */
+    --cor-background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+}
+
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('./OIP.jpeg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Para fixar a imagem de fundo */
+    color: var(--cor-texto); /* Cor do texto principal */
+    min-height: 100vh; /* Garante que o corpo tenha pelo menos 100% da altura da viewport */
+}
+
+/* Estilos do cabeçalho */
+#cabeçalho {
+    background-color: var(--cor-primaria);
+}
+
+#cabeçalho .navbar-brand {
+    color: var(--cor-texto);
+    font-size: 1.75rem;
+}
+
+#cabeçalho .nav-link {
+    color: var(--cor-texto);
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+}
+
+/* Estilos para links no rodapé */
+footer a {
+    color: var(--cor-texto);
+    list-style: none;
+    margin-right: 10px;
+}
+
+/* Botões personalizados */
+.btn-custom {
+    background-color: var(--cor-primaria);
+    color: var(--cor-texto);
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #495057; /* Escurece um pouco no hover */
+}
+
+ul {
+    list-style: none;
+}
+
+#estudos .card-body ul li a {
+    color: #007bff; /* Cor específica para os links dentro das listas nas cards */
+    font-weight: bold; /* Torna o texto dos links em negrito */
+    text-decoration: none;
+}
+
+#estudos .card-body ul li a:hover {
+    color: #0056b3; /* Cor ao passar o mouse nos links */
+    text-decoration: none; /* Adiciona sublinhado ao passar o mouse */
+    list-style: none;
+}
+
+/* Estilos para os cards */
+.card {
+    transition: transform 0.3s ease; /* Adiciona transição de transformação */
+    background-color: rgba(13, 42, 68, 0.8); /* Fundo transparente com opacidade */
+    border: none; /* Remove borda */
+    color: var(--cor-texto); /* Cor do texto dentro dos cards */
+    
+}
+
+.card:hover {
+    transform: scale(1.05); /* Aumenta em 5% ao passar o mouse */
+}
+
+.card-body {
+    border-radius: 0; /* Remove bordas arredondadas do corpo do card */
+}
+
+#quadro {
+    background-color: transparent;
+    border: 1px solid #eee;
+}
+
+.card-title {
+    color: #eee;
+}
+
+.section-title {
+    color: var(--cor-texto); /* Cor do título da seção */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 30px; /* Espaçamento inferior */
+}
+
+.section {
+    background-color: var(--cor-background); /* Fundo semi-transparente */
+    padding: 60px 0; /* Espaçamento interno das seções */
+    color: var(--cor-texto); /* Cor do texto nas seções */
+}
+
+
+/* Especificamente para garantir transparência nas seções */
+#sobre-mim, #meus-projetos, #estudos, #contato {
+    background-color: var(--cor-background); /* Fundo semi-transparente */
+    color: var(--cor-texto); /* Cor do texto principal */
+}
+
+
+
+.section-text {
+    color: var(--cor-texto);
+}
+
+/* Adicionando estilos de imagem de fundo */
+.bg-image-section {
+    background-image: url('./OIP.jpeg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--cor-texto);
+}
+
+#contato .card-body p a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+#contato .card-body p a:hover {
+    color: #2674c7; /* Cor ao passar o mouse nos links */
+    text-decoration: none; /* Adiciona sublinhado ao passar o mouse */
+    list-style: none;
+}
+
+#rodape .card-body a {
+    font-family: italic;
+}
+
+#rodape .card-body a:hover {
+    color: #205285;
+}
